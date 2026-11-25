@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Degradado ecológico para el borde hexagonal -->
+    <linearGradient id="ecoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11998e" />
+      <stop offset="100%" stop-color="#38ef7d" />
+    </linearGradient>
+    
+    <!-- Sombra sutil para dar volumen al logo -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Fondo transparente (puedes añadir color si la web lo requiere) -->
+  <rect width="100%" height="100%" fill="transparent" />
+
+  <!-- Base hexagonal (referencia a paneles solares y tecnología) -->
+  <polygon points="250,70 380,145 380,295 250,370 120,295 120,145" fill="#FFFFFF" stroke="url(#ecoGrad)" stroke-width="6" stroke-linejoin="round" filter="url(#shadow)" />
+
+  <!-- Silueta de hoja de fondo para reforzar la idea de "renovable" -->
+  <path d="M 250 110 C 320 110, 340 180, 340 220 C 340 290, 250 330, 250 330 C 250 330, 160 290, 160 220 C 160 180, 180 110, 250 110 Z" fill="url(#ecoGrad)" opacity="0.1" />
+
+  <!-- Eje de referencia central -->
+  <line x1="130" y1="220" x2="370" y2="220" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="6,6" />
+
+  <!-- Onda distorsionada (Armónicos / Mala calidad eléctrica) -->
+  <polyline points="130,220 145,160 165,280 185,150 205,270 225,180 250,220" fill="none" stroke="#EF4444" stroke-width="5" stroke-linejoin="round" />
+
+  <!-- Nodo de filtrado (Representa la corrección de la THD) -->
+  <circle cx="250" cy="220" r="6" fill="#1E293B" />
+
+  <!-- Onda pura (Energía de calidad) -->
+  <path d="M 250 220 C 265 140, 295 140, 310 220 C 325 300, 355 300, 370 220" fill="none" stroke="#3B82F6" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Tipografía moderna y limpia -->
+  <text x="250" y="430" font-family="&#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="900" fill="#1E293B" text-anchor="middle" letter-spacing="1">THD ZERO</text>
+  <text x="250" y="460" font-family="&#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#64748B" text-anchor="middle" letter-spacing="4">ENERGÍA INTELIGENTE</text>
+</svg>
