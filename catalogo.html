@@ -1,36 +1,438 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="icon" href="img/logo.svg">
 </head>
+
 <body>
-   <header>
-        <a href="index.html">
-            <img src="img/logo.svg" alt="logo web">
-        </a>       
+    <header>
+        <h1 id="inicio">Catálogo: tecnologías y productos</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="informe.html">Informe</a></li>
-                <li><a href="it-ot.html">IT-OT</a></li>
-                <li><a href="mercados.html">Mercados</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
+                <li><a href="mercados.html">Mercados</a></li>
+                <li><a href="it-ot.html">IT/OT y caso de éxito</a></li>
+                <li><a href="informe.html">Informe técnico</a></li>
             </ul>
         </nav>
-   </header>
-   <main>
+    </header>
+    <main>
+        <p>En esta página encontrarás una <strong>ficha por cada tecnología habilitadora digital (THD)</strong> con la
+            que trabajamos y el producto o servicio concreto que vendemos gracias a ella. Al final hay una <a
+                href="#resumen">tabla resumen</a> y nuestros <a href="#packs">packs combinados</a>.</p>
+        <p>Los precios son orientativos, sin IVA, y dependen del tamaño de la instalación.</p>
 
-   </main>
-   <footer>
-        <p><small>&copy; 2026 Iván Torres Salas, Khalid Echchadli, Samuel Hurtado Alfonso Todos los derechos reservados.</small></p>            
+        <h2>Índice de fichas</h2>
+        <ol>
+            <li><a href="#iot">Internet de las cosas (IoT)</a></li>
+            <li><a href="#bigdata">Big Data y analítica de datos</a></li>
+            <li><a href="#ia">Inteligencia artificial</a></li>
+            <li><a href="#nube">Computación en la nube</a></li>
+            <li><a href="#5g">Conectividad 5G</a></li>
+            <li><a href="#ciberseguridad">Ciberseguridad</a></li>
+            <li><a href="#robotica">Robótica y drones</a></li>
+            <li><a href="#gemelo">Gemelo digital y simulación</a></li>
+            <li><a href="#blockchain">Blockchain</a></li>
+            <li><a href="#materiales">Materiales avanzados (emergente)</a></li>
+        </ol>
+
+        <!-- FICHA 1 -->
+        <article id="iot">
+            <h2>1. Internet de las cosas (IoT)</h2>
+            <h3>Definición</h3>
+            <p>El IoT consiste en colocar sensores con conexión a internet en objetos físicos (un panel solar, un
+                inversor, un aerogenerador, una batería) para que envíen solos información sobre su estado y su
+                funcionamiento, sin que un técnico tenga que ir a mirarlo.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Sensores de bajo coste y bajo consumo, muchos alimentados con su propia minicélula solar.</li>
+                <li>Envío de datos en tiempo real por redes móviles (4G, 5G, NB-IoT) o LoRaWAN, útiles en zonas rurales.
+                </li>
+                <li>Conexión entre el mundo físico y los sistemas informáticos de la empresa.</li>
+                <li>Generan grandes cantidades de datos que después se analizan.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Medir la producción de cada fila de paneles (string) y detectar las que rinden menos.</li>
+                <li>Vibraciones y temperatura de la caja de engranajes (multiplicadora) de los aerogeneradores.</li>
+                <li>Estaciones meteorológicas: radiación solar, viento, temperatura.</li>
+                <li>Contadores inteligentes en viviendas y empresas con autoconsumo.</li>
+            </ul>
+            <h3>Producto: <em>VatioSense</em></h3>
+            <p>Kit de sensores que se instala en plantas solares y parques eólicos y envía cada minuto producción,
+                temperatura, vibraciones y datos meteorológicos. Si algo funciona por debajo de lo esperado, avisa al
+                móvil del técnico de guardia.</p>
+            <p><strong>Precio orientativo:</strong> 12 €/sensor/mes (incluye el equipo, la conectividad, el
+                mantenimiento y la sustitución si se estropea).</p>
+            <p><strong>Entorno:</strong> ambos (OT, porque mide el funcionamiento físico de la planta; IT, porque sus
+                datos llegan a los programas de gestión).</p>
+        </article>
+
+        <!-- FICHA 2 -->
+        <article id="bigdata">
+            <h2>2. Big Data y analítica de datos</h2>
+            <h3>Definición</h3>
+            <p>Es el conjunto de técnicas para guardar y estudiar enormes cantidades de datos que llegan muy rápido y de
+                fuentes distintas (sensores, contadores, precios del mercado eléctrico, meteorología…) con el objetivo
+                de descubrir patrones y tomar mejores decisiones.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Las "5 V": volumen, velocidad, variedad, veracidad y valor.</li>
+                <li>Unifica datos de fuentes distintas en un único lugar.</li>
+                <li>Permite crear cuadros de mando (dashboards) con indicadores.</li>
+                <li>Es la base sobre la que trabaja la inteligencia artificial.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Calcular el rendimiento real de cada planta (<em>performance ratio</em>) y compararlo con el
+                    esperado.</li>
+                <li>Estudiar los hábitos de consumo de los clientes de una comercializadora.</li>
+                <li>Calcular las toneladas de CO₂ evitadas.</li>
+                <li>Detectar pérdidas en la red de distribución.</li>
+            </ul>
+            <h3>Producto: <em>VatioInsight</em></h3>
+            <p>Cuadro de mando web que junta los datos de VatioSense, los precios del mercado eléctrico y la
+                facturación, y muestra indicadores como energía producida, rendimiento por planta, ingresos por MWh y
+                CO₂ evitado.</p>
+            <p><strong>Precio orientativo:</strong> 350 €/mes por planta + 1.000 € de puesta en marcha.</p>
+            <p><strong>Entorno:</strong> IT (se usa en la parte de gestión para tomar decisiones de negocio).</p>
+        </article>
+
+        <!-- FICHA 3 -->
+        <article id="ia">
+            <h2>3. Inteligencia artificial (IA)</h2>
+            <h3>Definición</h3>
+            <p>Son programas que aprenden a partir de datos para hacer tareas que antes necesitaban a una persona
+                pensando: predecir, clasificar, reconocer imágenes u optimizar decisiones con muchas variables.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Aprendizaje automático (machine learning): mejora cuantos más datos tiene.</li>
+                <li>Capacidad de predicción (producción, demanda, precios, averías).</li>
+                <li>Optimización: encuentra la mejor combinación entre muchas opciones.</li>
+                <li>Visión artificial: interpreta imágenes, por ejemplo fotos térmicas de paneles.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Predecir cuánta energía producirá una planta mañana según la previsión del tiempo.</li>
+                <li>Decidir cuándo cargar y descargar una batería para venderla más cara.</li>
+                <li>Mantenimiento predictivo de aerogeneradores e inversores.</li>
+                <li>Detectar paneles dañados en imágenes de drones.</li>
+            </ul>
+            <h3>Producto: <em>VatioForecast</em></h3>
+            <p>Servicio que cada día predice, hora a hora, la producción de la planta del cliente para las próximas 48
+                horas, de forma que pueda vender su energía en el mercado con menos errores (y menos penalizaciones).
+                Incluye avisos de mantenimiento predictivo.</p>
+            <p><strong>Precio orientativo:</strong> 1,50 €/MW instalado/día (unos 450 €/mes para una planta de 10 MW).
+            </p>
+            <p><strong>Entorno:</strong> ambos (IT para la venta de energía en el mercado; OT para el mantenimiento
+                predictivo).</p>
+        </article>
+
+        <!-- FICHA 4 -->
+        <article id="nube">
+            <h2>4. Computación en la nube (cloud computing)</h2>
+            <h3>Definición</h3>
+            <p>Es usar servidores, almacenamiento y programas a través de internet, pagando por lo que se usa, en lugar
+                de comprar y mantener ordenadores propios. Es una tecnología de <strong>infraestructura</strong>.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Modelos de servicio: IaaS (infraestructura), PaaS (plataforma) y SaaS (software).</li>
+                <li>Escalabilidad: crece o se reduce según la necesidad.</li>
+                <li>Pago por uso, sin grandes inversiones iniciales.</li>
+                <li>Acceso desde cualquier lugar y copias de seguridad automáticas.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Guardar y procesar los datos de todos los sensores de varias plantas.</li>
+                <li>Plataformas para gestionar comunidades energéticas y repartir la energía entre sus miembros.</li>
+                <li>Facturación y atención al cliente de comercializadoras.</li>
+            </ul>
+            <h3>Producto: <em>VatioComunidad</em></h3>
+            <p>Plataforma SaaS para comunidades energéticas: cada vecino o empresa ve en su móvil cuánta energía ha
+                producido la instalación compartida, cuánta le corresponde y cuánto ha ahorrado. Calcula automáticamente
+                los coeficientes de reparto.</p>
+            <p><strong>Precio orientativo:</strong> 2 € por participante y mes (mínimo 50 €/mes).</p>
+            <p><strong>Entorno:</strong> IT.</p>
+        </article>
+
+        <!-- FICHA 5 -->
+        <article id="5g">
+            <h2>5. Conectividad 5G</h2>
+            <h3>Definición</h3>
+            <p>Es la quinta generación de telefonía móvil. No solo es "internet más rápido": permite conectar muchísimos
+                dispositivos a la vez con un retraso muy pequeño, lo que hace posible controlar equipos a distancia en
+                tiempo real. Es una tecnología de <strong>conectividad</strong>.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Alta velocidad de transmisión.</li>
+                <li>Latencia muy baja (milisegundos).</li>
+                <li>Gran densidad de dispositivos conectados por km².</li>
+                <li>Posibilidad de redes privadas 5G dentro de una instalación.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Conectar miles de sensores de una gran planta solar sin cablear.</li>
+                <li>Transmitir en directo el vídeo de los drones de inspección.</li>
+                <li>Proteger y controlar la red eléctrica en tiempo real (redes inteligentes).</li>
+            </ul>
+            <h3>Producto: <em>Vatio5G Campo</em></h3>
+            <p>Diseño e instalación de una red 5G privada en grandes plantas solares y parques eólicos alejados de los
+                núcleos urbanos, para que sensores, cámaras, robots y drones estén siempre conectados.</p>
+            <p><strong>Precio orientativo:</strong> proyectos desde 40.000 €.</p>
+            <p><strong>Entorno:</strong> OT.</p>
+        </article>
+
+        <!-- FICHA 6 -->
+        <article id="ciberseguridad">
+            <h2>6. Ciberseguridad</h2>
+            <h3>Definición</h3>
+            <p>Es el conjunto de medidas, herramientas y buenas prácticas para proteger los sistemas, los datos y las
+                máquinas conectadas frente a ataques, robos de información o fallos. En el sector energético es
+                especialmente importante porque un ataque puede dejar sin luz a miles de personas.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Protege tres cosas: confidencialidad, integridad y disponibilidad.</li>
+                <li>En IT se prioriza proteger los datos; en OT, que las instalaciones no se paren y funcionen con
+                    seguridad.</li>
+                <li>Incluye prevención, detección y respuesta ante incidentes.</li>
+                <li>Se apoya en normas como ISO/IEC 27001 (IT) e IEC 62443 (OT), y en la directiva europea NIS2, que
+                    obliga al sector energético.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Proteger el SCADA que controla la planta.</li>
+                <li>Separar la red de control de la red de oficina.</li>
+                <li>Asegurar los inversores y los sensores conectados a internet.</li>
+                <li>Proteger los datos de consumo de los clientes.</li>
+            </ul>
+            <h3>Producto: <em>VatioShield</em></h3>
+            <p>Auditoría de seguridad IT y OT, adaptación a la directiva NIS2, segmentación de redes y vigilancia 24/7
+                que detecta comportamientos extraños en el SCADA. Incluye un curso anual para la plantilla.</p>
+            <p><strong>Precio orientativo:</strong> 4.500 € la auditoría inicial + 700 €/mes de vigilancia.</p>
+            <p><strong>Entorno:</strong> ambos.</p>
+        </article>
+
+        <!-- FICHA 7 -->
+        <article id="robotica">
+            <h2>7. Robótica y drones</h2>
+            <h3>Definición</h3>
+            <p>Son máquinas que hacen de forma autónoma, o controladas a distancia, tareas físicas repetitivas o
+                peligrosas. En renovables destacan los <strong>robots de limpieza</strong> que recorren las filas de
+                paneles y los <strong>drones</strong> que inspeccionan instalaciones desde el aire.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Funcionan solos siguiendo un programa o una ruta.</li>
+                <li>Llevan sensores y cámaras (normales y térmicas).</li>
+                <li>Evitan que las personas trabajen en altura o en zonas peligrosas.</li>
+                <li>Pueden contratarse como servicio (RaaS, robot como servicio).</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Limpieza de paneles solares en seco, sin gastar agua.</li>
+                <li>Inspección termográfica de plantas solares con drones.</li>
+                <li>Inspección de las palas de los aerogeneradores sin que nadie tenga que descolgarse.</li>
+            </ul>
+            <h3>Producto: <em>VatioBot</em></h3>
+            <p>Robots de limpieza en seco que funcionan de noche con su propia batería solar y servicio trimestral de
+                inspección con drones térmicos. Se contrata como servicio: nosotros somos los dueños de los robots y nos
+                encargamos de su mantenimiento.</p>
+            <p><strong>Precio orientativo:</strong> 900 €/MW/año (limpieza) + 600 € por inspección de dron.</p>
+            <p><strong>Entorno:</strong> OT.</p>
+        </article>
+
+        <!-- FICHA 8 -->
+        <article id="gemelo">
+            <h2>8. Gemelo digital y simulación</h2>
+            <h3>Definición</h3>
+            <p>Un gemelo digital es una copia virtual de algo real (una planta solar, un aerogenerador, una red
+                eléctrica) que se alimenta con datos reales. Sirve para saber cómo debería estar funcionando y para
+                probar cambios en el ordenador antes de hacerlos en la realidad.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Se actualiza con datos en tiempo real de sensores IoT.</li>
+                <li>Permite simular escenarios ("¿y si añadimos baterías?").</li>
+                <li>Compara la producción real con la teórica para detectar pérdidas.</li>
+                <li>Combina IoT, Big Data, nube e IA.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Diseñar una planta antes de construirla (inclinación, separación de filas).</li>
+                <li>Decidir si conviene repotenciar un parque eólico antiguo.</li>
+                <li>Calcular el tamaño ideal de una batería para un autoconsumo.</li>
+            </ul>
+            <h3>Producto: <em>VatioTwin</em></h3>
+            <p>Modelo virtual de la planta del cliente que compara cada día la producción real con la que debería haber
+                tenido y simula mejoras (baterías, cambio de inversores, repotenciación) antes de invertir.</p>
+            <p><strong>Precio orientativo:</strong> desde 15.000 € por proyecto + 300 €/mes de actualización.</p>
+            <p><strong>Entorno:</strong> ambos.</p>
+        </article>
+
+        <!-- FICHA 9 -->
+        <article id="blockchain">
+            <h2>9. Blockchain</h2>
+            <h3>Definición</h3>
+            <p>Es un registro digital compartido entre varios participantes en el que la información se guarda en
+                bloques encadenados y no se puede modificar ni borrar sin que los demás lo vean. Sirve para confiar en
+                datos que vienen de otros.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Registro distribuido: no depende de una sola empresa.</li>
+                <li>Inmutable y con trazabilidad completa.</li>
+                <li>Contratos inteligentes que se ejecutan solos cuando se cumple una condición.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Certificar que la energía que compra una empresa es realmente renovable (garantías de origen).</li>
+                <li>Intercambio de energía entre vecinos (P2P) dentro de una comunidad energética.</li>
+                <li>Pagos automáticos entre productores y consumidores.</li>
+            </ul>
+            <h3>Producto: <em>VatioChain</em></h3>
+            <p>Registro en blockchain de cada MWh producido por la planta, con hora y origen, para que sus clientes
+                industriales puedan demostrar que su consumo es 100 % renovable hora a hora.</p>
+            <p><strong>Precio orientativo:</strong> 0,05 € por MWh registrado.</p>
+            <p><strong>Entorno:</strong> IT.</p>
+        </article>
+
+        <!-- FICHA 10 -->
+        <article id="materiales">
+            <h2>10. Materiales avanzados (THD emergente)</h2>
+            <h3>Definición</h3>
+            <p>Son materiales nuevos diseñados para tener propiedades mejores que los tradicionales. En energía, el más
+                prometedor es la <strong>perovskita</strong>: un material que se pone en una capa finísima encima de la
+                célula de silicio de siempre y aprovecha una parte de la luz que el silicio no capta, así el panel
+                produce más energía en el mismo espacio.</p>
+            <h3>Características principales</h3>
+            <ul>
+                <li>Mayor eficiencia: las células tándem perovskita-silicio superan el límite del silicio solo.</li>
+                <li>Capas muy finas y ligeras que necesitan menos material.</li>
+                <li>Posibilidad de paneles flexibles, semitransparentes o de colores.</li>
+                <li>Tecnología aún en desarrollo: el reto es que duren tantos años como los paneles actuales.</li>
+            </ul>
+            <h3>Áreas de aplicación en energía y renovables</h3>
+            <ul>
+                <li>Plantas solares que producen más en menos terreno.</li>
+                <li>Integración fotovoltaica en edificios (fachadas y ventanas que generan energía).</li>
+                <li>Tejados industriales que no aguantan el peso de paneles convencionales.</li>
+            </ul>
+            <h3>Producto: <em>VatioLab Tándem</em> (piloto)</h3>
+            <p>Instalación piloto de paneles tándem perovskita-silicio junto a paneles convencionales en la planta del
+                cliente, con VatioSense midiendo ambos durante un año para comprobar cuánto más producen y cómo
+                envejecen.</p>
+            <p><strong>Precio orientativo:</strong> piloto de 12 meses por 8.000 €.</p>
+            <p><strong>Entorno:</strong> OT.</p>
+        </article>
+
+        <section id="resumen">
+            <h2>Tabla resumen de productos y servicios</h2>
+            <table>
+                <caption>Productos de Ecovatio, THD implicadas, cliente objetivo y precio orientativo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Producto / servicio</th>
+                        <th scope="col">THD implicadas</th>
+                        <th scope="col">Cliente objetivo</th>
+                        <th scope="col">Precio orientativo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>VatioSense</td>
+                        <td>IoT, 4G/5G, nube</td>
+                        <td>Plantas solares y parques eólicos</td>
+                        <td>12 €/sensor/mes</td>
+                    </tr>
+                    <tr>
+                        <td>VatioInsight</td>
+                        <td>Big Data, nube</td>
+                        <td>Gerencia de productores renovables</td>
+                        <td>350 €/mes por planta + 1.000 €</td>
+                    </tr>
+                    <tr>
+                        <td>VatioForecast</td>
+                        <td>IA, Big Data, IoT</td>
+                        <td>Productores que venden en el mercado eléctrico</td>
+                        <td>1,50 €/MW/día</td>
+                    </tr>
+                    <tr>
+                        <td>VatioComunidad</td>
+                        <td>Nube, Big Data</td>
+                        <td>Comunidades energéticas, cooperativas y ayuntamientos</td>
+                        <td>2 €/participante/mes</td>
+                    </tr>
+                    <tr>
+                        <td>Vatio5G Campo</td>
+                        <td>5G, IoT</td>
+                        <td>Grandes plantas en zonas rurales</td>
+                        <td>Desde 40.000 €</td>
+                    </tr>
+                    <tr>
+                        <td>VatioShield</td>
+                        <td>Ciberseguridad, IA</td>
+                        <td>Cualquier cliente (incluido en todos los packs)</td>
+                        <td>4.500 € + 700 €/mes</td>
+                    </tr>
+                    <tr>
+                        <td>VatioBot</td>
+                        <td>Robótica, drones, IA (visión artificial)</td>
+                        <td>Plantas solares en zonas secas y con polvo</td>
+                        <td>900 €/MW/año + 600 €/inspección</td>
+                    </tr>
+                    <tr>
+                        <td>VatioTwin</td>
+                        <td>Gemelo digital, IoT, Big Data, nube</td>
+                        <td>Propietarios que van a ampliar, repotenciar o añadir baterías</td>
+                        <td>Desde 15.000 € + 300 €/mes</td>
+                    </tr>
+                    <tr>
+                        <td>VatioChain</td>
+                        <td>Blockchain, IoT</td>
+                        <td>Productores con clientes industriales que exigen energía 100 % renovable</td>
+                        <td>0,05 €/MWh</td>
+                    </tr>
+                    <tr>
+                        <td>VatioLab Tándem (piloto)</td>
+                        <td>Materiales avanzados, IoT</td>
+                        <td>Productores innovadores y edificios con fachada solar</td>
+                        <td>8.000 € (piloto)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="packs">
+            <h2>Packs combinados: cómo se unen varias THD en una oferta</h2>
+            <p>Una THD sola aporta poco: el valor aparece cuando se combinan. Por eso vendemos estos packs:</p>
+            <ul>
+                <li><strong>Pack Planta Inteligente</strong> (VatioSense + VatioForecast + VatioInsight + VatioShield) —
+                    desde 1.300 €/mes para una planta de 10 MW: Los sensores IoT recogen los datos, la nube los guarda,
+                    el Big Data los ordena y la IA predice la producción y las averías. <strong>Valor para el
+                        cliente:</strong> menos penalizaciones en el mercado, menos tiempo con la planta parada y más
+                    ingresos por MW instalado.</li>
+                <li><strong>Pack O&amp;M Cero Agua</strong> (VatioBot + VatioSense + Vatio5G Campo): Los sensores
+                    detectan la caída de producción por suciedad, los robots limpian en seco y los drones revisan la
+                    planta, todo conectado con 5G. <strong>Valor para el cliente:</strong> más energía producida, ningún
+                    litro de agua gastado y menos desplazamientos de los técnicos.</li>
+                <li><strong>Pack Comunidad Energética</strong> (VatioComunidad + VatioSense + VatioChain): Medimos la
+                    producción de la instalación compartida, la repartimos de forma transparente y registramos cada
+                    intercambio. <strong>Valor para el cliente:</strong> los vecinos confían en el reparto, ahorran en
+                    la factura y la comunidad puede crecer sin complicaciones.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><small>&copy; 2026 Iván Torres Salas, Khalid Echchadli, Samuel Hurtado Alfonso Todos los derechos
+                reservados.</small></p>
         <address>
             Contacto:<a href="mailto:ecosine@gmail.com">ecosine@gmail.com</a>
         </address>
-        <p>Ultima modificación <time datetime="06-11-2026">6 de noviembre de 2026</time></p>    
-   </footer> 
+        <p>Ultima modificación <time datetime="06-11-2026">6 de noviembre de 2026</time></p>
+    </footer>
 </body>
+
 </html>
