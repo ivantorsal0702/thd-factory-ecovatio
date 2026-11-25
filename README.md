@@ -2,7 +2,6 @@
 
 Web corporativa de **Ecovatio Energía Digital**, una empresa ficticia de consultoría e integración de tecnologías habilitadoras digitales (THD) para el sector de la **energía y las renovables**.
 
-Proyecto de la Unidad 2 (*Caracterización de tecnologías habilitadoras digitales*) de los módulos *Digitalización aplicada al sector productivo* y *Lenguajes de Marcas y Sistemas de Gestión de Información*.
 
 ## Páginas
 
@@ -15,15 +14,41 @@ Proyecto de la Unidad 2 (*Caracterización de tecnologías habilitadoras digital
 | `it-ot.html` | IT frente a OT, convergencia, ciberseguridad y caso de éxito |
 | `informe.html` | Informe técnico, glosario y webgrafía |
 
-Solo HTML (sin CSS ni JavaScript). Las imágenes de `img/` son de elaboración propia.
 
 ## Equipo
 
+- Ivan Torres Salas
 - Samuel Hurtado Afonso
-- Nombre Apellidos
-- Nombre Apellidos
+- Khalid Echchadli Khaldoun
+
+
+## Distribución del trabajo
+
+Hemos dividido el desarrollo del sitio web entre los tres integrantes del equipo de la siguiente forma:
+
+* **Iván Torres Salas:** `index.html` y `catalogo.html`
+* **Samuel Hurtado Alfonso:** `it-ot.html` e `informe.html`
+* **Khalid Echchadli:** `sostenibilidad.html`, `mercados.html` y mantenimiento de `README.md`
+
+---
 
 ## Problemas que hemos tenido: 
 
 Cambio en los permisos para que todos pudiesemos subir los versiones al repositorio.
 Al usuar nuestras cuentas de github se nos vinculaban a las incorrectas y necesitabamos cambiarlo. 
+
+
+---
+
+## Estructura del repositorio
+
+thd-factory-ecovatio/
+├── README.md
+├── index.html
+├── catalogo.html
+├── sostenibilidad.html
+├── mercados.html
+├── it-ot.html
+├── informe.html
+└── img/
+    └── logo.svg
