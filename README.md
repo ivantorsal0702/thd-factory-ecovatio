@@ -2,7 +2,6 @@
 
 Web corporativa de **Ecovatio Energía Digital**, una empresa ficticia de consultoría e integración de tecnologías habilitadoras digitales (THD) para el sector de la **energía y las renovables**.
 
-
 ## Páginas
 
 | Archivo | Contenido |
@@ -14,13 +13,11 @@ Web corporativa de **Ecovatio Energía Digital**, una empresa ficticia de consul
 | `it-ot.html` | IT frente a OT, convergencia, ciberseguridad y caso de éxito |
 | `informe.html` | Informe técnico, glosario y webgrafía |
 
-
 ## Equipo
 
-- Ivan Torres Salas
-- Samuel Hurtado Afonso
+- Iván Torres Salas
+- Samuel Hurtado Alfonso
 - Khalid Echchadli Khaldoun
-
 
 ## Distribución del trabajo
 
@@ -28,20 +25,22 @@ Hemos dividido el desarrollo del sitio web entre los tres integrantes del equipo
 
 * **Iván Torres Salas:** `index.html` y `catalogo.html`
 * **Samuel Hurtado Alfonso:** `it-ot.html` e `informe.html`
-* **Khalid Echchadli:** `sostenibilidad.html`, `mercados.html` y mantenimiento de `README.md`
+* **Khalid Echchadli Khaldoun:** `sostenibilidad.html`, `mercados.html` y mantenimiento de `README.md`
 
 ---
 
-## Problemas que hemos tenido: 
+## Problemas que hemos tenido
 
-Cambio en los permisos para que todos pudiesemos subir los versiones al repositorio.
-Al usuar nuestras cuentas de github se nos vinculaban a las incorrectas y necesitabamos cambiarlo. 
-
+- Tuvimos que ajustar los permisos del repositorio para que todos pudiésemos subir nuestras versiones.
+- Al configurar Git en los equipos, las credenciales se vinculaban a cuentas de GitHub incorrectas y tuvimos que configurarlas para hacer los commits y pushes con nuestras cuentas.
+- A veces nos fallaban los push porque alguno de nosortros ya habia subido previamente algun cambio de ese mismo arachivo y github nos rechazaba la subida para que no se perdieran datos.
+La solucion fue usar el git pull que fusionaba las versiones y si habia algun cambio abre el un editor que nos deja fusionar ambas versiones.
 
 ---
 
 ## Estructura del repositorio
 
+```text
 thd-factory-ecovatio/
 ├── README.md
 ├── index.html
@@ -51,4 +50,9 @@ thd-factory-ecovatio/
 ├── it-ot.html
 ├── informe.html
 └── img/
-    └── logo.svg
+    ├── logo.svg
+    ├── mercado-smartgrid.jpg
+    ├── mercado-robotica.jpg
+    ├── mercado-comunidades.jpg
+    ├── mercado-blockchain.jpg
+    └── mercado-perovskita.jpg
